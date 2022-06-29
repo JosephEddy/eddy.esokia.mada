@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [text, setText] = useState('')
+  const [text1, setText] = useState('')
   return (
     <div className="App">
       <input 
-        onChange={(text) => setText(text.target.value)}
+        onChange={(text1) => setText(text1.target.value)}
       />
-      <p>{text}</p>
+      <p>{text1}</p>
     </div>
   );
 }
