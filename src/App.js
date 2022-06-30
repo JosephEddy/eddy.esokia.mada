@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Item from "./content/Item";
 
 function App() {
   const [text2, setText] = useState('')
@@ -9,6 +10,7 @@ function App() {
         onChange={(text2) => setText(text2.target.value)}
       />
       <p>{text2}</p>
+      <Item name="Joseph" firstname="Eddy" nationalite="malagasy"/>
     </div>
   );
 }
