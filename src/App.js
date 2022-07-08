@@ -1,17 +1,20 @@
-import { useState } from "react";
-import "./App.css";
-import Item from "./content/Item";
+import * as React from "react";
+import First from "./components/First";
+import Second from "./components/Second";
+import Third from "./components/Third";
+import AppBar from "@mui/material/AppBar";
+import Stack from "@mui/material/Stack";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 function App() {
-  const [text2, setText] = useState('')
   return (
-    <div className="App">
-      <input 
-        onChange={(text2) => setText(text2.target.value)}
-      />
-      <p>{text2}</p>
-      <Item name="Joseph" firstname="Eddy" nationalite="malagasy"/>
-    </div>
+    <React.Fragment>
+      <First />
+      <Second />
+      <Third />
+    </React.Fragment>
   );
 }
 
